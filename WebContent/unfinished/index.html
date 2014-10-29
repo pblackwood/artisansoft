@@ -1,0 +1,929 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en_US" lang="en_US" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="imagetoolbar" content="no" />    
+    <title>Under Construction</title>
+    <meta name="generator" content="Movable Type Pro 4.31-en" />
+    
+
+    
+        
+        
+        
+        
+        
+        
+        <link rel="stylesheet" href="http://artisansoft.com/unfinished/styles.css" type="text/css" />
+        <link rel="alternate" type="application/atom+xml" title="Atom" href="http://artisansoft.com/unfinished/atom.xml" />
+        <link rel="start" href="http://artisansoft.com/unfinished/" title="Home" />
+        <script type="text/javascript" src="http://artisansoft.com/unfinished/mt.js"></script>
+        
+    
+
+
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://artisansoft.com/unfinished/rsd.xml" />
+
+    
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    mtAttachEvent('load', mtUpdateScores);
+    mtAttachEvent('usersignin', mtUpdateScores);
+    /* ]]> */
+    </script>
+</head>
+<body id="mt-community-blog" class="mt-main-index layout-wtt">
+    <div id="container">
+        <div id="container-inner">
+            <div id="header">
+                <div id="header-inner">
+                    <div id="header-content">
+
+                        <h1 id="header-name"><a href="http://artisansoft.com/unfinished/" accesskey="1">Under Construction</a></h1>
+    
+
+                        <div id="header-menu">
+    <ul>
+
+        <li><a href="http://artisansoft.com/unfinished/">Home</a></li>
+        <li><a href="http://artisansoft.com/unfinished/archives.html">Archives</a></li>
+
+    </ul>
+</div>
+
+
+                        <div class="widget-sign-in widget">
+    <h3 class="widget-header">Sign In</h3>
+    <div id="signin-widget-content" class="widget-content"></div>
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+function mtUpdateSignInWidget(u) {
+    var separator = '&nbsp;&nbsp;|&nbsp;&nbsp;';
+    var el = document.getElementById('signin-widget-content');
+    var content = '';
+    if (!el) return;
+    if (u) {
+        if (u && u.is_authenticated) {
+            user = u;
+            mtSaveUser();
+        } else {
+            // user really isn't logged in; so let's do this!
+            return mtSignIn();
+        }
+    } else {
+        u = mtGetUser();
+    }
+    if (u && u.name) {
+        var url;
+        if (u.is_authenticated) {
+            if (u.is_author) {
+                url = 'http://artisansoft.com/cgi-sys/cgiwrap/artisnk1/managed-mt/mt-cp.cgi?__mode=view&blog_id=1';
+                url += '&static=' + encodeURIComponent( location.href );
+            } else {
+                url = u.url;
+            }
+        } else if (u.url) {
+            url = u.url;
+        } else {
+            url = null;
+        }
+        if (url)
+            content += 'You are signed in as <a href="' + url + '">' + u.name + '</a>';
+        else
+            content += 'You are signed in as ' + u.name + '';
+        if (u.is_author)
+            content += separator + '<a href="http://artisansoft.com/cgi-sys/cgiwrap/artisnk1/managed-mt/mt-cp.cgi?__mode=edit&blog_id=1&return_to=' + encodeURIComponent(document.URL) + '">Edit profile</a>';
+        
+        content += separator + '<a href="javascript:void(0)" onclick="return mtSignOutOnClick()">Sign out</a>';
+        
+    } else if (u && u.is_banned) {
+        content = 'You do not have permission to sign in to this blog.';
+    } else {
+        content = '<a href="javascript:void(0)" onclick="return mtSignInOnClick(\'signin-widget-content\')">Sign In</a>';
+        
+        
+        content += separator + 'Not a member? <a href="http://artisansoft.com/cgi-sys/cgiwrap/artisnk1/managed-mt/mt-cp.cgi?__mode=register&blog_id=1&return_to=' + encodeURIComponent(document.URL) + '">Register</a>';
+        
+        
+    }
+    el.innerHTML = content;
+}
+mtAttachEvent('usersignin', mtUpdateSignInWidget);
+mtUpdateSignInWidget();
+/* ]]> */
+</script>
+
+
+                        <div class="header-search">
+    <form method="get" action="http://artisansoft.com/cgi-sys/cgiwrap/artisnk1/managed-mt/mt-search.cgi">
+
+        <input type="hidden" name="IncludeBlogs" value="1" />
+
+        <input type="hidden" name="limit" value="20" />
+        <label for="search">Search</label>
+        <input id="search" class="query" name="search" value="" />
+        <input class="submit" type="submit" value="Go" />
+    </form>
+</div>
+
+                   </div>
+                </div>
+            </div>
+            <div id="content">
+                <div id="content-inner">
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+
+
+    <div id="entry-4" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://artisansoft.com/unfinished/2009/09/sunnyhill-tidbits.html" rel="bookmark">Sunnyhill Tidbits</a></h2>
+        <div class="asset-meta">
+    <div class="user-pic">
+
+    <a href="http://artisansoft.com/cgi-sys/cgiwrap/artisnk1/managed-mt/mt-cp.cgi?__mode=view&amp;amp;blog_id=1&amp;amp;id=1"><img
+        src="/mt-static/support/assets_c/userpics/userpic-1-100x100.png"
+        width="36" height="36" alt="user-pic" /></a>
+
+</div>
+
+    <span class="byline">
+
+        By <span class="vcard author"><a href="http://artisansoft.com/cgi-sys/cgiwrap/artisnk1/managed-mt/mt-cp.cgi?__mode=view&amp;blog_id=1&amp;id=1">Peter Swartwout (admin)</a></span> on <abbr class="published" title="2009-09-24T19:23:54-05:00">September 24, 2009  7:23 PM</abbr>
+
+    </span>
+
+    
+    
+    <a href="javascript:void(0)" onclick="return mtScore(4)" id="scoring-id-4" class="scoring">
+        <span id="scoring-vote-4" class="scoring-vote">Vote</span>
+        <span id="scoring-score-4" class="scoring-score">0</span>
+        <span id="scoring-score-label-4" class="scoring-score-label">Votes</span>
+    </a>
+
+</div>
+
+
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            Here are the tidbits for the week of Sep 28, 2009:<br /><ul><li>Girl Scout service project</li></ul>Here are the details for tidbit 1<br /><br /><ul><li>Sunnyhill To Go needs volunteers</li></ul>Details for #2<br /><br /><ul><li>You get the idea ...<br /></li></ul> 
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+
+    <div id="entry-2" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://artisansoft.com/unfinished/2009/09/ok-this-one-is-supposed-to-look-like-an-article.html" rel="bookmark">Ok, this one is supposed to look like an article</a></h2>
+        <div class="asset-meta">
+    <div class="user-pic">
+
+    <a href="http://artisansoft.com/cgi-sys/cgiwrap/artisnk1/managed-mt/mt-cp.cgi?__mode=view&amp;amp;blog_id=1&amp;amp;id=1"><img
+        src="/mt-static/support/assets_c/userpics/userpic-1-100x100.png"
+        width="36" height="36" alt="user-pic" /></a>
+
+</div>
+
+    <span class="byline">
+
+        By <span class="vcard author"><a href="http://artisansoft.com/cgi-sys/cgiwrap/artisnk1/managed-mt/mt-cp.cgi?__mode=view&amp;blog_id=1&amp;id=1">Peter Swartwout (admin)</a></span> on <abbr class="published" title="2009-09-23T17:27:00-05:00">September 23, 2009  5:27 PM</abbr>
+
+    </span>
+
+    
+    
+    <a href="javascript:void(0)" onclick="return mtScore(2)" id="scoring-id-2" class="scoring">
+        <span id="scoring-vote-2" class="scoring-vote">Vote</span>
+        <span id="scoring-score-2" class="scoring-score">0</span>
+        <span id="scoring-score-label-2" class="scoring-score-label">Votes</span>
+    </a>
+
+</div>
+
+
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            This is supposed to look like an article because it does not have comments under it.<br /><br /><font style="font-size: 1.95312em;">Heading 1</font><br /><p>This is text to go with heading 1. Blah de blah de blah. <br /></p><font style="font-size: 1.5625em;">Heading 2</font><br /><p><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 12"><meta name="Originator" content="Microsoft Word 12"><link rel="File-List" href="file:///C:%5CDOCUME%7E1%5CPETERS%7E1%5CLOCALS%7E1%5CTemp%5Cmsohtmlclip1%5C01%5Cclip_filelist.xml"><!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:RelyOnVML/>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><link rel="themeData" href="file:///C:%5CDOCUME%7E1%5CPETERS%7E1%5CLOCALS%7E1%5CTemp%5Cmsohtmlclip1%5C01%5Cclip_themedata.thmx"><link rel="colorSchemeMapping" href="file:///C:%5CDOCUME%7E1%5CPETERS%7E1%5CLOCALS%7E1%5CTemp%5Cmsohtmlclip1%5C01%5Cclip_colorschememapping.xml"><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="-->
+   <m:smallfrac m:val="off">
+   <m:dispdef>
+   <m:lmargin m:val="0">
+   <m:rmargin m:val="0">
+   <m:defjc m:val="centerGroup">
+   <m:wrapindent m:val="1440">
+   <m:intlim m:val="subSup">
+   <m:narylim m:val="undOvr">
+  </m:narylim></m:intlim>
+</m:wrapindent><!--[endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1107304683 0 0 159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1073750139 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1130787629;
+	mso-list-template-ids:-790573276;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]-->
+
+</m:defjc></m:rmargin></m:lmargin></m:dispdef></m:smallfrac></p><p class="MsoNormal"><font style="font-size: 0.8em;">When you set up a transaction, you want to have confidence
+that the operations will all commit successfully or roll back completely. That
+means making sure a transaction can propagate to all the components that need
+to participate in the unit of work. Quality of service qualifiers and
+invocation style control the propagation of transactions in a module. A number
+of conditions need to exist in order for a transaction to propagate
+successfully: </font></p>
+
+<ul style="margin-top: 0in;" type="disc"><li class="MsoNormal" style="">A
+     transaction qualifier must be set on the implementation, and the qualifier
+     must specify a <b style="">global</b>
+     transaction. </li><li class="MsoNormal" style="">The
+     implementation must be invoked <b style="">synchronously</b>.
+     </li><li class="MsoNormal" style="">The
+     component must <b style="">join</b> a
+     propagated transaction. </li><li class="MsoNormal" style="">The
+     transaction <b style="">cannot be suspended</b>
+     on any of the participating references. </li><li class="MsoNormal" style="">The
+     preferred interaction style on a participating interface cannot influence
+     the invocation style to become asynchronous. </li></ul><font style="font-size: 1.5625em;">Heading 2</font><p>Blah de blah de blah. <span>In this process, the request to open a bank account comes in through the 
+receive <span class="resultofText" name="resultofMatch"><span><span class="resultofText" name="resultofMatch">activ</span>ity</span></span>, and is 
+evaluated by a Java snippet </span><em>(GetCreditRating)</em><span> to determine 
+the customer's credit score. It is the credit score that determines how the 
+process will proceed from here on in. </span>Here is a big image:<img alt="Sunset.jpg" src="http://artisansoft.com/unfinished/images/Sunset.jpg" class="mt-image-none" style="" width="800" height="600" /><span>After the credit rating is obtained the 
+flow passes through a gateway (denoted by a diamond) which commences the <span class="resultofText" name="resultofMatch">parallel</span> region of the flow. The 
+subsequent links have transition conditions (the circular symbol on the link 
+indicates that the link has an evaluation condition). If the score is too low, 
+then that path to </span><em>SetAnswerReject</em><span> is followed, and this 
+Java snippet <span class="resultofText" name="resultofMatch"><span><span class="resultofText" name="resultofMatch">activ</span>ity</span></span> rejects 
+the request. If however, the score is acceptable, then the process flows through 
+both of the other links concurrently (they are both set to </span><span class="q">"otherwise"</span><span>). Each of the <span class="resultofText" name="resultofMatch">activ</span>ities on each of these paths are executed at 
+the same time, and then account status is confirmed in the 
+</span><em>SetAnswerConfirm</em><span> <span class="resultofText" name="resultofMatch"><span><span class="resultofText" name="resultofMatch">activ</span>ity</span></span>. Note that the confirmation 
+<span class="resultofText" name="resultofMatch"><span><span class="resultofText" name="resultofMatch">activ</span>ity</span></span><span> cannot complete until 
+all <span class="resultofText" name="resultofMatch">activ</span>ities on both 
+paths have been executed.</span></span>
+
+</p>
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+
+    <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://artisansoft.com/unfinished/2009/09/i-just-finished-installing-movable-type-4.html"
+    trackback:ping="http://artisansoft.com/cgi-sys/cgiwrap/artisnk1/managed-mt/mt-tb.cgi/2"
+    dc:title="This is a classic blog post"
+    dc:identifier="http://artisansoft.com/unfinished/2009/09/i-just-finished-installing-movable-type-4.html"
+    dc:subject=""
+    dc:description="Welcome to my new blog powered by Movable Type. This is the first post on my blog and was created for me automatically when I finished the installation process. But that is ok, because I will soon be creating posts..."
+    dc:creator="Peter Swartwout (admin)"
+    dc:date="2009-09-19T13:48:17-05:00" />
+</rdf:RDF>
+-->
+
+<div id="entry-1" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://artisansoft.com/unfinished/2009/09/i-just-finished-installing-movable-type-4.html" rel="bookmark">This is a classic blog post</a></h2>
+        <div class="asset-meta">
+    <div class="user-pic">
+
+    <a href="http://artisansoft.com/cgi-sys/cgiwrap/artisnk1/managed-mt/mt-cp.cgi?__mode=view&amp;amp;blog_id=1&amp;amp;id=1"><img
+        src="/mt-static/support/assets_c/userpics/userpic-1-100x100.png"
+        width="36" height="36" alt="user-pic" /></a>
+
+</div>
+
+    <span class="byline">
+
+        By <span class="vcard author"><a href="http://artisansoft.com/cgi-sys/cgiwrap/artisnk1/managed-mt/mt-cp.cgi?__mode=view&amp;blog_id=1&amp;id=1">Peter Swartwout (admin)</a></span> on <abbr class="published" title="2009-09-19T13:48:17-05:00">September 19, 2009  1:48 PM</abbr>
+
+    </span>
+
+    <a href="http://artisansoft.com/unfinished/2009/09/i-just-finished-installing-movable-type-4.html#comments" class="entry-meta-comments" title="2 Comments">2</a>
+    <a href="http://artisansoft.com/unfinished/2009/09/i-just-finished-installing-movable-type-4.html#trackbacks" class="entry-meta-trackbacks" title="0 TrackBacks">0</a>
+    <a href="javascript:void(0)" onclick="return mtScore(1)" id="scoring-id-1" class="scoring">
+        <span id="scoring-vote-1" class="scoring-vote">Vote</span>
+        <span id="scoring-score-1" class="scoring-score">0</span>
+        <span id="scoring-score-label-1" class="scoring-score-label">Votes</span>
+    </a>
+
+</div>
+
+
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            Welcome to my new blog powered by Movable Type. This is the first post on my blog and was created for me automatically when I finished the installation process. But that is ok, because I will soon be creating posts of my own!<br /><br />It's a classic blog post because there is a comment section below it and anyone can leave a comment.<br /><br />It's not clear yet how much we can administer the commenters, i.e. make them login before they can comment.<br />
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+
+
+<div class="content-nav">
+    <div class="create-entry"><a href="http://artisansoft.com/unfinished/create-entry.html">Create Entry</a></div>
+
+
+
+    <a href="http://artisansoft.com/unfinished/archives.html">Archives</a>
+
+
+</div>
+
+
+
+</div>
+                    </div>
+
+                    <div id="beta">
+    <div id="beta-inner">
+        
+
+        <div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://artisansoft.com/unfinished/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://artisansoft.com/unfinished/2009/09/">September 2009 (3)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+            <li><a href="http://artisansoft.com/unfinished/sunnyhill-choirs-greatest-hits.html" title="Sunnyhill Choir's Greatest Hits">Sunnyhill Choir's Greatest Hits</a></li>
+        
+        </ul>
+        
+    
+    
+   </div>
+</div>
+
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://artisansoft.com/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://artisansoft.com/unfinished/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+
+
+    </div>
+</div>
+
+<div id="gamma">
+    <div id="gamma-inner">
+        <div class="widget-recent-comments widget">
+    <h3 class="widget-header">Recent Comments</h3>
+    <div class="widget-content">
+        <ul class="recent-comments-list">
+        
+            <li><a href="http://artisansoft.com/unfinished/sunnyhill-choirs-greatest-hits.html#comment-6">commie commented on Sunnyhill Choir's Greatest Hits</a>: I am flatt</li>
+        
+    
+        
+            <li><a href="http://artisansoft.com/unfinished/sunnyhill-choirs-greatest-hits.html#comment-5">Peter Swartwout (admin) commented on Sunnyhill Choir's Greatest Hits</a>: User "comm</li>
+        
+    
+        
+            <li><a href="http://artisansoft.com/unfinished/sunnyhill-choirs-greatest-hits.html#comment-4">commie commented on Sunnyhill Choir's Greatest Hits</a>: This looks</li>
+        
+    
+        
+            <li><a href="http://artisansoft.com/unfinished/sunnyhill-choirs-greatest-hits.html#comment-3">spincycle commented on Sunnyhill Choir's Greatest Hits</a>: This page </li>
+        
+    
+        
+            <li><a href="http://artisansoft.com/unfinished/2009/09/i-just-finished-installing-movable-type-4.html#comment-2">spincycle commented on This is a classic blog post</a>: This is a </li>
+        
+    
+        
+            <li><a href="http://artisansoft.com/unfinished/2009/09/i-just-finished-installing-movable-type-4.html#comment-1">Peter Swartwout commented on This is a classic blog post</a>: Movable Ty</li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+    <div class="widget-recent-entries widget-archives widget">
+    <h3 class="widget-header">Recent Entries</h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://artisansoft.com/unfinished/2009/09/sunnyhill-tidbits.html">Sunnyhill Tidbits</a></li>
+        
+    
+        
+            <li><a href="http://artisansoft.com/unfinished/2009/09/ok-this-one-is-supposed-to-look-like-an-article.html">Ok, this one is supposed to look like an article</a></li>
+        
+    
+        
+            <li><a href="http://artisansoft.com/unfinished/2009/09/i-just-finished-installing-movable-type-4.html">This is a classic blog post</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+    <div class="widget-recent-assets widget">
+    <h3 class="widget-header">Recent Assets</h3>
+    <div class="widget-content">
+        <ul>
+        
+        <li class="item"><a class="asset-image" href="http://artisansoft.com/unfinished/images/Sunset.jpg"><img src="http://artisansoft.com/unfinished/assets_c/2009/09/Sunset-thumb-autox70-2.jpg" class="asset-img-thumb" alt="Sunset.jpg" title="Sunset.jpg" /></a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+    <div class="widget-tag-cloud widget">
+    <h3 class="widget-header">Tag Cloud</h3>
+    <div class="widget-content">
+        <ul>
+    
+        </ul>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+                </div>
+            </div>
+            <div id="footer">
+                <div id="footer-inner">
+                    <div id="footer-content">
+                        <div class="widget-powered widget">
+                            <div class="widget-content">
+                                <span>Powered by <a href="http://www.movabletype.com/" rel="generator">Movable Type Pro</a></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+

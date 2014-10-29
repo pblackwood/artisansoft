@@ -1,0 +1,140 @@
+h1 {
+	font-size: large;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+h2 {
+	font-size: medium;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+h3 {
+	font-family: trebuchet ms, verdana, sans serif;
+	font-size: large;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+h4, h5 {
+	font-size: 0.9em;
+	font-style: italic;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+img {
+	border: 0;
+}
+a {
+   text-decoration: none;
+}
+#content {
+	position: relative;
+}
+#name-block {
+   color: #000088;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+#name-block h2 {
+   color: #000088;
+   margin-top: 0px;
+}
+#synopsis,
+#project-history,
+#employment-history,
+#core-competencies,
+#education,
+#volunteer {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#project-history,
+#employment-history,
+#core-competencies,
+#education,
+#volunteer {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#project-history h2,
+#employment-history h2,
+#core-competencies h2,
+#education h2,
+#volunteer h2 {
+   color: #000088;
+   margin-left: -10px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#contact {
+	position: absolute;
+	top: 45px;
+	left: 430px;
+	color: #000088;
+}
+#contact h3 {
+	margin-left: -10px;
+	margin-bottom: 5px;
+}
+#contact h5 {
+	margin-left: 10px;
+	font-size: smaller;
+}
+#last-project {
+	margin-bottom: 20px;
+}
+.project,
+.employer,
+.school {
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.project h3,
+.employer h3,
+.school h3 {
+	margin-left: -10px;
+	margin-bottom: 5px;
+}
+.project p,
+.employer p,
+.school p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.inline-header {
+	font-style: italic;
+}
+.credential {
+	font-style: italic;
+	font-weight: bold;
+	color: #000088;
+}
+.bullet {
+	color: #000088;
+	font-size: larger;
+	font-weight: bold;
+}
+.highlight {
+	border: solid tan 1px;
+	padding: 10px;
+	margin: 10px;
+}
+.highlight ul {
+	padding: 0px;
+	margin: 0px;	
+}
+.highlight li {
+	list-style: none;
+	padding-left: 6.0em;
+	text-indent: -6.0em;
+}
+.quote {
+	border: solid 1px rgb(190,190,190);
+	padding: 10px;
+	margin: 20px 30px;
+	font-size: 9pt;
+}
+.emph {
+	font-style: italic;
+	font-weight: bold;
+}

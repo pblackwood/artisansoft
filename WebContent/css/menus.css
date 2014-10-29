@@ -1,0 +1,130 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/final_drop.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+.menu {
+	width: 530px;
+	height: 20px;
+	font-size: 0.85em;
+	position: relative;
+	top: 99px;
+	left: 0px;
+	z-index: 100;
+	background: #cbcbcb;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+/* remove all the bullets, borders and padding from the default list styling */
+.menu ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.menu ul ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* float the list to make it horizontal and a relative positon so that you can control the dropdown menu positon */
+.menu li {
+	float: left;
+	position: relative;
+}
+
+/* should not bold all selections underneath
+.menu li#selected {
+	font-weight: bold;
+}
+*/
+
+/* style the links for the top level */
+.menu a,.menu a:visited {
+	display: block;
+	font-size: 11px;
+	text-decoration: none;
+	color: #292631;
+	width: 121px;
+	height: 20px;
+	background: #cbcbcb;
+	padding-left: 10px;
+	line-height: 19px;
+	border-left: 1px solid #4a4a4a;
+}
+
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+.menu ul ul {
+	visibility: hidden;
+	position: absolute;
+	height: 0;
+	left: 0;
+	top: 20px;
+	border-top: 1px solid black;
+}
+
+/* style the table so that it takes no part in the layout - required for IE to work */
+.menu table {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-collapse: collapse;
+}
+
+/* style the second level links */
+.menu ul ul a,.menu ul ul a:visited {
+	background: rgb(255, 255, 248);
+	color: #000;
+	height: auto;
+	line-height: 1em;
+	padding: 5px 0px 5px 10px;
+	width: 121px;
+	border-left: 1px solid #4a4a4a;
+	border-right: 1px solid #4a4a4a;
+/*	border-bottom: 1px solid #4a4a4a; */
+}
+
+/* style the last (lowest) second level link */
+.menu .lastmenuitem {
+	border-bottom: 1px solid #4a4a4a; 
+}
+
+/* style the top level hover */
+.menu a:hover {
+	color: black;
+	font-weight: bold;
+/*	background: rgb(223,238,202);*/
+	background: rgb(255, 255, 248);
+}
+
+/* style the top level hover */
+.menu :hover>a,.menu ul ul :hover>a {
+	color: black;
+	font-weight: bold;
+	/*	background: rgb(223,238,202);*/
+	background: rgb(255, 255, 248);
+}
+
+/* style the second level hover */
+.menu ul ul a:hover {
+	color: black;
+	font-weight: normal;
+	background: #cbcbcb;
+}
+
+/* style the second level hover */
+.menu ul ul :hover>a {
+	color: black;
+	font-weight: normal;
+	background: #cbcbcb;
+}
+
+/* make the second level visible when hover on first level list OR link */
+.menu ul li:hover ul,.menu ul a:hover ul {
+	visibility: visible;
+}
