@@ -1,89 +1,233 @@
+<link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type"
-			content="text/html; charset=iso-8859-1" />
-		<meta name="author" content="Peter Swartwout" />
-		<meta name="keywords"
-			content="swartwout, artisan, software, development, java, xml, html, database" />
-		<meta name="robots" content="all" />
-		<title>Artisan Solutions</title>
-		<link rel="stylesheet" media="all" type="text/css"
-			href="css/artisan.css" />
-		<link rel="stylesheet" media="all" type="text/css"
-			href="css/menus.css" />
-	</head>
-	<body id="artisan-home">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+    <meta name="author" content="Peter Swartwout"/>
+    <meta name="keywords" content="swartwout, artisan, software, development, java, xml, html, database"/>
+    <meta name="robots" content="all"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Artisan Solutions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" media="all" type="text/css" href="css/artisan.css"/>
+</head>
+<body>
 
-		<div id="container">
-			<!--#include virtual="/include/header.html" -->  	
-			<div id="content">
-				<div id="intro">
-					<h3>
-						<span>Bringing Artistry to Technology</span>
-					</h3>
-					<img src="images/peter-2010-medium.png" class="bio-pic" align="right" />
-					<p>
-						This is the business website of Peter Swartwout,<br> a unique consultant 
-						with 23 years' experience who strives to always bring artistry
-						to technology.
-					</p>
-					<p>
-						I specialize in high-performance multi-user web applications
-						built on the Java platform.  I have spearheaded many high-visibility,
-						mission-critical projects featured on the <a href="clients/index.html">Clients</a> page.
-					</p>
-					<p>
-						My solid background in the Java/J2EE platform, Agile project management, Ruby on Rails development,
-						REST and SOAP service integration, GUI programming, and database development will help 
-						you solve the most demanding IT challenges.  
-					</p>
-    			</div>
-    			
-    			<div id="what">
-					<h3>
-						<span>What I Offer</span>
-					</h3>
-					<p>
-						I can add value to your project in many ways, as a design consultant,
-						team leader, or individual coder, depending on your specific needs and
-						the experience level of your team.
-					</p> 
-					<p>
-						I have a strong preference for lightweight architecture using
-        				open-source technologies and agile software development methodology.
-						Open-source development keeps costs low while providing an ever-expanding
-						feature set. I enjoy keeping up with the rapidly changing technology 
-						landscape so you don't have to.
-					</p>
-					<p>
-						Agile methodology means something different to every company, but the
-						general idea is finding the sweet spot of <span class="em">process formality</span>
-						so your team spends its time solving problems and not "doing the process".
-						Knowing how to find that delicate balance point is crucial to project 
-						success and is something of an art form, gained with experience.
-					</p>
-    			</div> 
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <img class="navbar-brand" src="images/artisan-logo-grey.png" />
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <img class="slogan navbar-right" src="images/artisan-slogan-grey.png" />
+        </div>
+    </div>
+</nav>
 
-				<div id="contact">
-					<h3>
-						<span>Contact</span>
-					</h3>
-					<p >
-						For more information or to discuss your specific IT needs, please
-						call 	
-					</p>					
-					<p class="indent">
-						(412) 401-6615
-					</p> 
-					<p>						
-						or send email to
-					</p>
-					<p class="indent">
-						<a href="mailto:info@artisansoft.com">info@artisansoft.com</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</body>
+<div class="container">
+    <div class="intro row">
+        <div class="text col-sm-7">
+            <p>
+                Welcome to Artisan Solutions, the consulting company of <span class="em">Peter Swartwout</span>, who always strives to bring artistry to technology.
+            </p>
+            <p>
+                I specialize in high-performance multi-user web applications customized for my clients' specific needs.
+                Take a look at my many high-visibility, mission-critical projects below.
+            </p>
+            <p>
+                Put my solid background in Java/Spring, REST, Agile, and Javascript UI programming to work on your next project.
+                Together we can overcome the most demanding challenges.
+            </p>
+            <p>
+                I can contract directly with clients, or partner with one of the superb local companies listed below.
+            </p>
+            <p>
+                My status is: <span class="notice">currently available</span>. Please call for details.
+            </p>
+            <p class="contact">
+                phone: 412-401-6615<br />
+                email: info@artisansoft.com
+            </p>
+        </div>
+        <div class="photo col-sm-5">
+            <img class="bio-pic" src="images/peter-2010-medium.png" />
+        </div>
+    </div>
+
+    <div class="content row">
+        <div class="colorbar what col-sm-4 col-xs-12">
+            <h3>What I Offer</h3>
+            <p>
+                I can add value to your project in many ways. Call or email to discuss your specific needs.
+            </p>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Development
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                From helping you set up your development environment, to coding the UI, to building REST APIs, I do it all.
+                                <br /><br />I have been coding for 25 years and constantly push myself to learn new things.
+                                Expertise in current web development technologies:
+                                <ul class="skills1">
+                                    <li>ES6</li>
+                                    <li>React</li>
+                                    <li>Redux</li>
+                                    <li>Responsive design</li>
+                                    <li>Bootstrap and CSS</li>
+                                </ul>
+                                On the backend, I can help you develop:
+                                <ul class="skills2">
+                                    <li>REST APIs</li>
+                                    <li>Spring Security</li>
+                                    <li>NoSql data persistence</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Design Consultation
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                I can help you flesh out your project's requirements in ways you might not have thought of.
+                                <br /><br />Are there existing assets you can repurpose
+                                rather than rewrite? Who are the users? How will they interact with the system? How will this system interact with the company's
+                                overall architecture?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Team Leadership
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                Demonstrated ability to lead teams from start to finish on complex projects with short schedules.
+                                <br /><br />I enjoy mentoring newer developers as much as I enjoy
+                                trading war stories with the seasoned pros. Comfortable in multiple roles:
+                                <ul class="skills2">
+                                    <li>Project Manager</li>
+                                    <li>Architect</li>
+                                    <li>Tech Lead</li>
+                                    <li>Mentor</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Agile Coaching
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                Proven track record of delivering superlative results using agile practices:
+                                <ul class="skills2">
+                                    <li>Backlog development</li>
+                                    <li>Scrum</li>
+                                    <li>Continuous integration</li>
+                                    <li>Heavy reliance on unit testing</li>
+                                </ul>
+                                I can lead sprint planning meetings and retrospective meetings.
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="colorbar clients col-sm-4 col-xs-12">
+            <h3>Clients</h3>
+            <p>Here are some of the many clients I have helped through the years:</p>
+            <div class="indent">
+                <p class="link"><a href="http://www.dqecom.com" target="_blank">
+                    <img class="client-logo" src="images/dqe.png" title="DQE Communications"/>
+                </a></p>
+                <p class="link"><a href="http://www.kornferry.com" target="_blank">
+                    <img class="client-logo" src="images/kflogo.png" title="Korn Ferry"/>
+                </a></p>
+                <p class="link"><a href="http://www.fedex.com/us" target="_blank">
+                    <img class="client-logo" src="images/fedexground.png" title="Fedex Ground"/>
+                </a></p>
+                <p class="link"><a href="http://www.pnc.com" target="_blank">
+                    <img class="client-logo" src="images/pnc.png" title="PNC Bank"/>
+                </a></p>
+            </div>
+        </div>
+
+        <div class="colorbar partners col-sm-4 col-xs-12">
+            <h3>Partners</h3>
+            <p>These are companies I have worked with, either as a consultant or as a sub-contractor:</p>
+            <div class="indent">
+                <p class="link"><a href="http://summa.com" target="_blank">
+                    <img class="partner-logo" src="images/summa.png" title="Summa" />
+                </a></p>
+                <p class="link"><a href="http://openarc.net" target="_blank">
+                    <img class="partner-logo" src="images/openarc.png" title="OpenArc"/>
+                </a></p>
+                <p class="link"><a href="http://cpr-pa.com" target="_blank">
+                    <img class="partner-logo" src="images/cpr.png" title="Consulting Professional Resources"/>
+                </a></p>
+                <p class="link"><a href="http://www.tek-connexion.com" target="_blank">
+                    <img class="partner-logo" src="images/tekconnexion.png" title="Tek Connexion"/>
+                </a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer row">
+        <span class="copyright col-xs-12 col-sm-3">&copy; 2016 Artisan Solutions, LLC</span>
+        <span class="phone col-xs-12 col-sm-3">p: 412-401-6615</span>
+        <span class="phone col-xs-12 col-sm-3">e: info@artisansoft.com</span>
+        <span class="phone col-xs-12 col-sm-3">w: artisansoft.com</span>
+    </div>
+
+    <div class="unfinished">
+        <p>
+            I have a strong preference for lightweight architecture using
+            open-source technologies and agile software development methodology.
+            Open-source development keeps costs low while providing an ever-expanding
+            feature set. I enjoy keeping up with the rapidly changing technology
+            landscape so you don't have to.
+        </p>
+        <p>
+            Agile methodology means something different to every company, but the
+            general idea is finding the sweet spot of <span class="em">process formality</span>
+            so your team spends its time solving problems and not "doing the process".
+            Knowing how to find that delicate balance point is crucial to project
+            success and is something of an art form, gained with experience.
+        </p>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+</body>
 </html>

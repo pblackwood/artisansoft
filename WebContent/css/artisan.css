@@ -1,123 +1,340 @@
-    body {
-    	font-family: verdana, tahoma, sans;
-    	font-size: small;
-    	background-color: rgb(102,102,102);
-    	margin: 0px;
+body {
+    font-family: verdana, tahoma, sans;
+    font-size: small;
+    background-color: rgb(102, 102, 102);
+    margin-top: 75px;
+}
+
+.container {
+    /*background-color: #f1f5e7;*/
+}
+
+.navbar {
+    border-bottom-width: 0px;
+}
+
+.intro {
+    background-color: #f8f8e8;
+}
+
+.intro .text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.intro .contact {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 10px 10px 15px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .intro .contact {
+        margin-left: 50px;
+        margin-right: 100px;
     }
-	h3 {
-		font-family: trebuchet ms, verdana, sans serif;
-		font-size: large;
-		font-weight: bold;
-		margin-top: 25px;
-		margin-bottom: 0px;
-	}
-	h4 {
-		font-size: 0.9em;
-		font-style: italic;
-	}
-	p {
-    	margin: 10px 15px;
-	}
-	a {
-		text-decoration: none;
-	}    
-	#container {
-		position: absolute;
-		top: 0px;
-    	left: 50%;
-		width: 650px;
-    	margin-left: -325px;
-    	background-color: rgb(248,248,248);
-    	border: solid black 2px;
+}
+
+@media (min-width: 992px) {
+    .intro .contact {
+        margin-left: 50px;
+        margin-right: 200px;
     }
-    #pageHeader {
-    	height: 120px;
-    	background-color: rgb(223,238,202);
-    	border-bottom: solid black 1px;
+}
+
+@media (min-width: 1200px) {
+    .intro .contact {
+        margin-left: 50px;
+        margin-right: 300px;
     }
-	#logo {
-		background: url('../images/iron_small.jpg') left no-repeat;
-		width: 120px;
-		height: 120px;
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		border-right: solid black 1px; 
-		border-bottom: solid black 1px; 
-	}
-	#logo span {
-    	display: none;
+}
+
+.photo {
+    padding: 20px;
+}
+
+.bio-pic {
+    border: 1px solid #888888;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.navbar-header, .navbar-collapse {
+    line-height: 5.5em;
+}
+
+.slogan {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    /*margin-bottom: 10px;*/
+    /*margin-right: 20px;*/
+    /*vertical-align: middle;*/
+    /*float: right;*/
+    height: 75px;
+}
+
+.navbar h2 {
+    margin-right: 20px;
+}
+
+.footer {
+    text-align: center;
+    background-color: #f8f8e8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-family: trebuchet ms, verdana, sans serif;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+h4 {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+p {
+    margin: 10px 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.notice {
+    color: #7a0000;
+    font-weight: bold;
+}
+
+/* CONTENT ON HOME PAGE */
+.content {
+}
+
+.content h3 {
+    text-align: center;
+}
+
+/* Allow minimum height, except on small devices */
+@media (min-width: 768px) {
+    .colorbar {
+        min-height: 700px;
     }
-	#header {
-    	position: relative;
-    	top: 0px;
-    	left: 120px;
-    	width: 530px;
-    	height: 120px;
-    }
-    #banner {
-    	background: url('../images/artisanlogomedium.gif') left no-repeat; 
-    	width: 280px;
-    	height: 80px;
-		position: absolute;
-		top: 10px;
-		left: 135px;
-    }
-    #banner span {
-    	display: none;
-    }
-	#content {
-    	padding-left: 20px;
-    	padding-right: 20px;
-    	padding-bottom: 20px;
-    }
-    .em {
-    	font-style: italic;
-    }
-	.client {
-		padding: 5px;
-		margin: 10px;
-    	background-color: #efefef;
-    	border: solid 1px #cfcfcf;
-    }
-	.client h3 {
-		margin-left: 5px;
-		margin-top: 5px;
-	}
-	.client h4 {
-		margin-left: 15px;
-		margin-bottom: 0px;
-		margin-top: 10px;
-	}
-	.client img {
-		float: right;
-		margin-left: 5px;
-		margin-bottom: 5px;
-		height: 45px;
-	}
-	.client img#fedex {
-		float: right;
-		height: 55px;
-	}
-	.client img#pnc {
-		float: right;
-		height: 30px;
-	}
-	.client img#aeo, img#cigna {
-		float: right;
-		height: 75px;
-	}
-	.client p.project-top {
-		margin-top: 3px;
-	}
-	.consultant {
-		font-weight: bold;
-	}
-	.indent {
-		margin: 10px 40px 20px 40px; 
-	}
-	.bio-pic {
-		border: 1px solid black;
-		margin: 15px 20px 5px 15px;
-		width: 200px;
-	}
+}
+
+/* WHAT I OFFER */
+.what {
+    background-color: #caa434;
+    /*border-top-left-radius: 5px;*/
+    /*border-bottom-left-radius: 5px;*/
+    padding: 5px;
+}
+
+.what .panel-group {
+    margin-top: -10px;
+    padding: 20px;
+}
+
+/*.what .indent {*/
+    /*margin-left: 5px;*/
+/*}*/
+
+/*.what a {*/
+    /*text-decoration: none;*/
+/*}*/
+
+.what .panel-default a {
+    text-decoration: none;
+}
+
+.what .panel-default a:hover {
+    text-decoration: none;
+    /*width: 100%;*/
+    /*padding: 10px;*/
+    /*border-color: #444;*/
+    /*border-radius: 5px;*/
+}
+
+.what .panel-title {
+    font-family: Prociono, Serif;
+    font-size: large;
+    font-style: normal;
+    width: 100%;
+    /*background-color: #ddd;*/
+    color: #666;
+    /*border: 1px solid #444;*/
+    /*border-radius: 5px;*/
+}
+
+.what .panel-heading:hover {
+    background-color: #bbb;
+    color: #444;
+}
+
+/* CLIENTS */
+.clients {
+    background-color: #4dc13c;
+    padding: 5px;
+}
+
+.clients .indent {
+    margin-left: 5px;
+}
+
+.clients a {
+    text-decoration: none;
+}
+
+.clients p.link {
+    width: 100%;
+    /*font-family: Prociono, Serif;*/
+    /*font-size: large;*/
+    padding: 10px;
+    /*background-color: #ddd;*/
+    /*color: #666;*/
+    border-radius: 5px;
+}
+
+.clients .client-logo {
+    width: 100%;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+/* PARTNERS */
+.partners {
+    background-color: #568eea;
+    padding: 5px;
+}
+
+.partners .indent {
+    margin-left: 5px;
+}
+
+.partners a {
+    text-decoration: none;
+}
+
+.partners p.link {
+    width: 100%;
+    /*font-family: Prociono, Serif;*/
+    /*font-size: large;*/
+    padding: 10px;
+    /*background-color: #cde877;*/
+    border-radius: 5px;
+}
+
+.partners .partner-logo {
+    width: 100%;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+/* UNFINISHED */
+.unfinished {
+    display: none;
+}
+
+#pageHeader {
+    height: 120px;
+    background-color: rgb(223, 238, 202);
+    border-bottom: solid black 1px;
+}
+
+#logo {
+    background: url('../images/iron_small.jpg') left no-repeat;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-right: solid black 1px;
+    border-bottom: solid black 1px;
+}
+
+#header {
+    position: relative;
+    top: 0px;
+    left: 120px;
+    width: 530px;
+    height: 120px;
+}
+
+#banner {
+    background: url('../images/artisanlogomedium.gif') left no-repeat;
+    width: 280px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    left: 135px;
+}
+
+#banner span {
+    display: none;
+}
+
+.em {
+    font-weight: bold;
+}
+
+.client {
+    padding: 5px;
+    margin: 10px;
+    background-color: #efefef;
+    border: solid 1px #cfcfcf;
+}
+
+.client h3 {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.client h4 {
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.client img {
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    height: 45px;
+}
+
+.client img#fedex {
+    float: right;
+    height: 55px;
+}
+
+.client img#pnc {
+    float: right;
+    height: 30px;
+}
+
+.client img#aeo, img#cigna {
+    float: right;
+    height: 75px;
+}
+
+.client p.project-top {
+    margin-top: 3px;
+}
+
+.consultant {
+    font-weight: bold;
+}
+
+.indent {
+    margin: 10px 40px 20px 40px;
+}
+
