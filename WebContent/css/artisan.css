@@ -117,10 +117,12 @@ a {
 }
 
 /* CONTENT ON HOME PAGE */
-.content {
+.intro h1 {
+    font-family: Prociono, Serif;
+    text-align: center;
 }
 
-.content h3 {
+.content h3, .content h2 {
     text-align: center;
 }
 
@@ -142,6 +144,10 @@ a {
 .what .panel-group {
     margin-top: -10px;
     padding: 20px;
+}
+
+.what h2 {
+    font-family: Prociono, Serif;
 }
 
 /*.what .indent {*/
@@ -186,6 +192,10 @@ a {
     padding: 5px;
 }
 
+.clients h2 {
+    font-family: Prociono, Serif;
+}
+
 .clients .indent {
     margin-left: 5px;
 }
@@ -214,6 +224,10 @@ a {
 .partners {
     background-color: #568eea;
     padding: 5px;
+}
+
+.partners h2 {
+    font-family: Prociono, Serif;
 }
 
 .partners .indent {
