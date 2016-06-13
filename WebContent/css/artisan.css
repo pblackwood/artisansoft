@@ -111,8 +111,13 @@ a {
     text-decoration: none;
 }
 
-.notice {
+.status-available {
     color: #7a0000;
+    font-weight: bold;
+}
+
+.status-working {
+    color: #7a4812;
     font-weight: bold;
 }
 
